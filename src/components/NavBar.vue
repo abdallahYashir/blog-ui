@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="mb-3">
     <b-navbar toggleable="lg" type="dark" variant="info">
       <b-navbar-brand href="#">NavBar</b-navbar-brand>
 
@@ -43,5 +43,5 @@
 export default {};
 </script>
 
-<style>
+<style scoped>
 </style>
