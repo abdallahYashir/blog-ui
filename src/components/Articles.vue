@@ -1,6 +1,17 @@
 <template>
   <div class="articles-wrapper">
     <h3>Articles</h3>
+    <div class="filter-bar">
+      <div class="row">
+        <div class="col-2 pl-0">
+          <button class="btn btn-block btn-light btn-btn-outline-primary">
+            <font-awesome-icon icon="plus"/>
+            <span class="add-new px-1">Add New</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <hr>
     <div class="articles">
       <div v-for="article in allArticles" :key="article.id" class="article">
         <b-card
@@ -39,5 +50,17 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
+.filter-bar {
+  padding: 10px 20px;
+}
+
+.card-text {
+  font-style: italic;
+}
+
+.articles {
+  display: flex;
+  flex-direction: row;
+}
 </style>
