@@ -5,7 +5,7 @@
       <div v-for="article in allArticles" :key="article.id" class="article">
         <b-card
           :title="article.title"
-          img-src="https://picsum.photos/600/300/?image=25"
+          img-src="https://picsum.photos/600/300/?image=20"
           img-alt="Image"
           img-top
           tag="article"
